@@ -28,6 +28,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".MapsActivity" />
         <activity android:name=".SignUpActivity" />
+        <activity android:name=".Register" />
         <activity android:name=".MainActivity" />
         <activity android:name=".AutocompleteActivity" />
         <!--
