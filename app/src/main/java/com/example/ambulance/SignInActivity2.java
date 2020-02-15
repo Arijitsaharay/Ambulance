@@ -15,6 +15,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignInActivity2 extends AppCompatActivity
 {
@@ -22,6 +24,8 @@ public class SignInActivity2 extends AppCompatActivity
     EditText e1,e2;
     FirebaseAuth auth;
     ProgressDialog dialog;
+    DatabaseReference databaseReference;
+   // FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -54,10 +58,14 @@ public class SignInActivity2 extends AppCompatActivity
                     {
 
                         dialog.hide();
-                        Toast.makeText(getApplicationContext(),"User Successfully sign in!",Toast.LENGTH_SHORT).show();
+                        databaseReference = FirebaseDatabase.getInstance().getReference().child("Drivers");
+                        //Drivers drivers_object = new Drivers(e4.getText().toString(), e5.getText().toString(), e6.getText().toString(), e7.getText().toString(),"online");
+                        FirebaseUser firebaseUser = auth.getCurrentUser();
+                        databaseReference.child(firebaseUser.getUid()).child("status").setValue("online");
+                        Toast.makeText(getApplicationContext(),"Driver Successfully sign in!",Toast.LENGTH_SHORT).show();
                         Intent i=new Intent(SignInActivity2.this,MainPageActivity2.class);
                         startActivity(i);
-                        finish();
+
                     }
                     else
                     {

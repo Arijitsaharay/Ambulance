@@ -39,9 +39,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_above="@+id/signup"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="384dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginTop="402dp"
+        android:layout_marginBottom="87dp"
         android:background="@drawable/button_rounded"
         android:onClick="login"
         android:text="Login"
@@ -52,8 +53,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
+        android:layout_below="@+id/signup"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="95dp"
+        android:layout_marginTop="87dp"
         android:layout_marginBottom="180dp"
         android:background="@drawable/button_rounded"
         android:onClick="register"

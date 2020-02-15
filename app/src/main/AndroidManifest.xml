@@ -17,18 +17,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".emergency_ride_confirm"></activity>
+        <activity android:name=".ProfileDriver"></activity>
+        <activity android:name=".emergency_ride_confirm" />
         <activity
             android:name=".MainPageActivity2"
             android:label="@string/title_activity_main_page2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".firstpage">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".firstpage"></activity>
         <activity android:name=".SignInActivity2" />
         <activity android:name=".Login" />
         <activity android:name=".RideConfirmActivity" />
@@ -62,7 +57,13 @@
             android:name="OnlineSearch.Key"
             android:value="@string/tomtomkey" />
 
-        <activity android:name=".SplashActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -71,7 +71,7 @@ public class SignUpDriverActivity extends AppCompatActivity {
                         dialog.hide();
                         Toast.makeText(getApplicationContext(), "Driver Successfully Registered!", Toast.LENGTH_SHORT).show();
                         databaseReference = FirebaseDatabase.getInstance().getReference().child("Drivers");
-                        Drivers drivers_object = new Drivers(e4.getText().toString(), e5.getText().toString(), e6.getText().toString(), e7.getText().toString());
+                        Drivers drivers_object = new Drivers(e4.getText().toString(), e5.getText().toString(), e6.getText().toString(), e7.getText().toString(),"online");
                         FirebaseUser firebaseUser = auth.getCurrentUser();
                         databaseReference.child(firebaseUser.getUid()).setValue(drivers_object).addOnCompleteListener(new OnCompleteListener<Void>()
                         {
