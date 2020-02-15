@@ -57,7 +57,7 @@ public class PlacesApi
 
             StringBuilder sb = new StringBuilder("https://api.tomtom.com/search/2/poiSearch/");
             sb.append(input);
-            sb.append(".json?key=ujV2KUVdMGBp556ezFziHtApzPuGoUzq&language=en-US&countrySet=IN&lat=22.57&lon=88.36&radius=10000&categorySet=7321005,7321004,7321003,7321002,9373002,9373003,7303002,9663005&limit=10");
+            sb.append(".json?key=ujV2KUVdMGBp556ezFziHtApzPuGoUzq&language=en-US&countrySet=IN&lat=22.57&lon=88.36&radius=5000&categorySet=7321005,7321004,7321003,7321002,9373002,9373003,7303002,9663005&limit=10");
             URL url=new URL(sb.toString());
             connection=(HttpURLConnection)url.openConnection();
             InputStreamReader inputStreamReader=new InputStreamReader(connection.getInputStream());
