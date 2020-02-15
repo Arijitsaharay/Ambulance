@@ -46,4 +46,6 @@ public class AutocompleteActivity extends AppCompatActivity
         });
     }
 
+    public void login(View view) {
+    }
 }

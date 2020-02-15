@@ -16,7 +16,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class SignInActivity extends AppCompatActivity
+public class SignInActivity2 extends AppCompatActivity
 {
 
     EditText e1,e2;
@@ -27,7 +27,7 @@ public class SignInActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_sign_in2);
 
         e1=findViewById(R.id.email_in);
         e2=findViewById(R.id.password_in);
@@ -35,7 +35,7 @@ public class SignInActivity extends AppCompatActivity
         dialog = new  ProgressDialog(this);
     }
 
-    public void signinUser(View V)
+    public void signinDriver(View V)
     {
         dialog.setMessage("Signing in... Please wait");
         dialog.show();
@@ -55,7 +55,7 @@ public class SignInActivity extends AppCompatActivity
 
                         dialog.hide();
                         Toast.makeText(getApplicationContext(),"User Successfully sign in!",Toast.LENGTH_SHORT).show();
-                        Intent i=new Intent(SignInActivity.this,MainPageActivity.class);
+                        Intent i=new Intent(SignInActivity2.this,MainPageActivity2.class);
                         startActivity(i);
                         finish();
                     }
@@ -70,14 +70,14 @@ public class SignInActivity extends AppCompatActivity
     }
     public void register(View v)
     {
-        Intent intent = new Intent(SignInActivity.this, Register.class);
+        Intent intent = new Intent(SignInActivity2.this, Register.class);
         startActivity(intent);
         finish();
     }
 
     public void login(View v)
     {
-        Intent intent = new Intent(SignInActivity.this, Login.class);
+        Intent intent = new Intent(SignInActivity2.this, Login.class);
         startActivity(intent);
         finish();
     }
