@@ -60,13 +60,13 @@
     <Button
         android:layout_width="70dp"
         android:layout_height="25dp"
-        android:text="Sign Out"
+        android:text="Home"
         android:textSize="10dp"
         android:background="@drawable/button_bookride"
         android:textColor="#FFFFFF"
         android:layout_marginTop="552dp"
         android:layout_marginLeft="160dp"
-        android:onClick="signOut">
+        android:onClick="open_home">
 
     </Button>
 

@@ -68,18 +68,13 @@ public class SignInActivity extends AppCompatActivity
             });
         }
     }
-
-    public void signUpUser(View v)
+    public void register(View v)
     {
-        Intent intent = new Intent(SignInActivity.this, SignUpActivity.class);
+        Intent intent = new Intent(SignInActivity.this, Register.class);
         startActivity(intent);
         finish();
     }
 
-    public void signUpDriver(View v)
-    {
-        Intent intent = new Intent(SignInActivity.this, SignUpDriverActivity.class);
-        startActivity(intent);
-        finish();
-    }
+
+
 }

@@ -11,7 +11,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"/>
+        android:layout_height="300dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -19,57 +19,31 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:textColorHint="@color/colorAccent"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Email ID"
-            android:id="@+id/email_in"
-            android:ems="10"
-            android:inputType="text"
-            android:textSize="22sp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+        />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:textColorHint="@color/colorAccent"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Password"
-            android:id="@+id/password_in"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:textSize="22sp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/button_rounded"
-        android:onClick="signinUser"
         />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="USER"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
         android:layout_marginTop="12dp"
         android:background="@drawable/button_rounded"
-        android:onClick="register"
-        android:text="Sign UP"
+        android:onClick="signUpUser" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DRIVER"
+        android:textSize="22sp"
         android:textColor="#ffffff"
-        android:textSize="22sp" />
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="signUpDriver" />
 </LinearLayout>
