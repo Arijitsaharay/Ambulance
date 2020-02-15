@@ -17,10 +17,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".emergency_ride_confirm"></activity>
         <activity
             android:name=".MainPageActivity2"
             android:label="@string/title_activity_main_page2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".firstpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +33,7 @@
         <activity android:name=".Login" />
         <activity android:name=".RideConfirmActivity" />
         <activity android:name=".PaymentGateway" />
-        <activity android:name=".SignInActivity"></activity>
+        <activity android:name=".SignInActivity" />
         <activity android:name=".Profile" />
         <activity
             android:name=".MainPageActivity"

@@ -184,4 +184,9 @@ public class MainPageActivity extends AppCompatActivity  implements NavigationVi
         Intent intent = new Intent(MainPageActivity.this, MapsActivity.class);
         startActivity(intent);
     }
+    public void goTocheckout(View view)
+    {
+        Intent intent = new Intent(MainPageActivity.this, emergency_ride_confirm.class);
+        startActivity(intent);
+    }
 }

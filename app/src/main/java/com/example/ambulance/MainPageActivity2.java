@@ -185,6 +185,11 @@ public class MainPageActivity2 extends AppCompatActivity {
         Intent intent = new Intent(MainPageActivity2.this, MapsActivity.class);
         startActivity(intent);
     }
+    public void goTocheckout(View view)
+    {
+        Intent intent = new Intent(MainPageActivity.this, MapsActivity.class);
+        startActivity(intent);
+    }
 
 }
 
